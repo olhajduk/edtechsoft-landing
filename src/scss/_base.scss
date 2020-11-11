@@ -18,10 +18,16 @@ ul {
     list-style: none;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: $color-bg;
     color: $color-primary;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .container {
@@ -29,7 +35,7 @@ body {
     padding: 0 8px;
     margin: 0 auto;
     width: 100%;
-    max-width: calc(1255px + #{$dp});
+    max-width: calc(1248px + #{$dp});
 
     @include media-up($sm) {
         padding: 0 $dp;
@@ -48,4 +54,12 @@ body {
     &--yellow {
         color: $color-yellow;
     }
+}
+
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
 }

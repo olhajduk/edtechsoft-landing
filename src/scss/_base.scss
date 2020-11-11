@@ -11,30 +11,28 @@
 a {
     color: currentColor;
     text-decoration: none;
+    outline: none;
 }
 
 ul {
     list-style: none;
 }
 
-html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;
-}
-
 body {
-    font-size: 1.4rem;
-    line-height: 1.68rem;
+    font-family: 'Open Sans', sans-serif;
+    background: $color-bg;
+    @include font(14px, 17px);
 }
 
 .container {
-    padding: 0 0.8rem;
+    $dp: 3px;
+    padding: 0 8px;
     margin: 0 auto;
     width: 100%;
-    max-width: 125.5rem;
+    max-width: calc(1225px + #{$dp});
 
     @include media-up($sm) {
-        padding: 0 3rem;
+        padding: 0 $dp;
     }
 
     &__half {

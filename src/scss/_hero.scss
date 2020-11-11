@@ -1,28 +1,33 @@
 .hero {
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: -126px;
-        right: -4%;
-        width: 150vw;
-        height: 170px;
-        background: $color-bg-secondary;
-        transform: rotate(175.5deg);
-    }
+    overflow: hidden;
 
     &__container {
         padding-top: 27px;
-        height: 100%;
-        min-height: calc(100vh - 94px);
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -67.5%;
+            right: -31%;
+            width: 150vw;
+            height: 50vh;
+            background: $color-bg-secondary;
+            transform: rotate(175.5deg);
+        }
 
         @include media-up($sm) {
             padding-top: 72px;
+            padding-bottom: 178px;
         }
     }
 
     &__title {
         padding-bottom: 46px;
         @include font(24px, 29px);
+
+        p {
+            position: relative;
+        }
 
         @include media-up($sm) {
             padding-bottom: 44px;
@@ -90,7 +95,7 @@
     }
 
     &__image {
-        bottom: 60px;
+        bottom: 70px;
         right: -185px;
         z-index: -1;
 

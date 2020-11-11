@@ -66,3 +66,101 @@
         }
     }
 }
+
+.bg-item {
+    display: none;
+
+    @include media-up($sm) {
+        &--dots {
+            top: -30%;
+            left: 0;
+            margin: -8px -6.5px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 126px;
+
+            li {
+                margin: 8px 6.5px;
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $color-bg-dots;
+                opacity: 0.5;
+                transition: all 0.15s ease-in-out;
+                cursor: pointer;
+
+                &:before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    display: block;
+                    transform: scale(3);
+                }
+
+                &:hover {
+                    transform: scale(2);
+                }
+            }
+        }
+
+        &--square {
+            display: block;
+            top: -12%;
+            left: -18%;
+            width: 30px;
+            height: 30px;
+            opacity: 0.4;
+            border: 5px solid $color-bg-square;
+            transform: rotate(45deg);
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                border-width: 15px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &--x {
+            bottom: 7%;
+            left: -34%;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: -7%;
+                right: 32%;
+                width: 8.13px;
+                height: 34.09px;
+                background-color: $color-bg-x;
+                opacity: 0.4;
+                transition: all 0.25s ease-in-out;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                &:before {
+                    transform: rotate(-45deg);
+                }
+    
+                &:after {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

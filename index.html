@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./src/css/style.min.css">
 </head>
 
-<body>
+<body class="fs--14">
     <header class="header">
         <div class="header__container container">
             <a href="#" class="header__logo fw--700">
-                <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header__logo-img" width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.6941 25.4463L8.0105 21.5142L28.5001 33.5833L14.6941 25.4463Z" fill="#FFE26E" />
                     <path d="M28.5 33.5833L48.9896 21.5142L42.306 25.4463L28.5 33.5833Z" fill="#FFE26E" />
                     <path
@@ -32,8 +32,9 @@
                         d="M8.01066 41.1839C8.01066 43.3396 6.26333 45.087 4.10809 45.087C1.95241 45.087 0.205078 43.3396 0.205078 41.1839C0.205078 39.0287 1.95241 37.2814 4.10809 37.2814C6.26333 37.2814 8.01066 39.0287 8.01066 41.1839Z"
                         fill="#398DF3" />
                 </svg>
-
-                Логотип
+                <span class="header__logo-name">
+                    Логотип
+                </span>
             </a>
 
             <div class="header__events">
@@ -41,32 +42,32 @@
                     <p class="header__name fw--700">
                         Прием заявок
                     </p>
-                    <p class="header__date fw--400">
-                        до <span class="header__number fw--700 color--yellow">11</span> марта
+                    <p class="header__date color--muted fw--400">
+                        до <span class="header__number fs--16 fw--700 color--yellow">11</span> марта
                     </p>
                 </div>
                 <div class="header__event">
                     <p class="header__name fw--700">
                         Получение заданий
                     </p>
-                    <p class="header__date fw--400">
-                        <span class="header__number fw--700 color--yellow">4</span> марта
+                    <p class="header__date color--muted fw--400">
+                        <span class="header__number fs--16 fw--700 color--yellow">4</span> марта
                     </p>
                 </div>
                 <div class="header__event">
                     <p class="header__name fw--700">
                         Внесение ответов
                     </p>
-                    <p class="header__date fw--400">
-                        до <span class="header__number fw--700 color--yellow">18</span> марта
+                    <p class="header__date color--muted fw--400">
+                        до <span class="header__number fs--16 fw--700 color--yellow">18</span> марта
                     </p>
                 </div>
                 <div class="header__event">
                     <p class="header__name fw--700">
                         Итоги конкурса
                     </p>
-                    <p class="header__date fw--400">
-                        <span class="header__number fw--700 color--yellow">19</span> марта
+                    <p class="header__date color--muted fw--400">
+                        <span class="header__number fs--16 fw--700 color--yellow">19</span> марта
                     </p>
                 </div>
             </div>
@@ -77,7 +78,7 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="hero__container container">
                 <div class="container__half">
                     <h1 class="hero__title fw--700">
                         Тестовое задание для
@@ -89,10 +90,10 @@
 
                     <div class="hero__content">
                         <div class="container__half">
-                            <h2 class="hero__payment hero__subtitle fw--700">
+                            <h2 class="hero__payment hero__subtitle fs--24 fw--700">
                                 Низкий оргвзнос
 
-                                <span class="hero__cost">
+                                <span class="hero__cost fs--36">
                                     30
                                 </span>
                             </h2>
@@ -100,24 +101,24 @@
                         </div>
                         <div class="container__half">
                             <div class="hero__list">
-                                <h2 class="hero__subtitle color--muted">
+                                <h2 class="hero__subtitle fs--24 fw--700 color--muted">
                                     Ученикам
                                 </h2>
                                 <ul class="hero__benefits">
-                                    <li class="hero__benefit">Конкурс по 16 предметам</li>
-                                    <li class="hero__benefit">Доступные задания для всех учеников</li>
-                                    <li class="hero__benefit">Бесплатные дипломы и сертификаты</li>
+                                    <li class="hero__benefit fw--600">Конкурс по 16 предметам</li>
+                                    <li class="hero__benefit fw--600">Доступные задания для всех учеников</li>
+                                    <li class="hero__benefit fw--600">Бесплатные дипломы и сертификаты</li>
                                 </ul>
                             </div>
 
                             <div class="hero__list">
-                                <h2 class="hero__subtitle color--muted">
+                                <h2 class="hero__subtitle fs--24 fw--700 color--muted">
                                     Учителям
                                 </h2>
                                 <ul class="hero__benefits">
-                                    <li class="hero__benefit">Бесплатные свидетельства</li>
-                                    <li class="hero__benefit">Бесплатные благодарности</li>
-                                    <li class="hero__benefit">Простое участие</li>
+                                    <li class="hero__benefit fw--600">Бесплатные свидетельства</li>
+                                    <li class="hero__benefit fw--600">Бесплатные благодарности</li>
+                                    <li class="hero__benefit fw--600">Простое участие</li>
                                 </ul>
                             </div>
                         </div>

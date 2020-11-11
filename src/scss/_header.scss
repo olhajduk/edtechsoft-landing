@@ -1,0 +1,66 @@
+.header {
+    padding: 13px 0;
+
+    @include media-up($sm) {
+        padding: 19px 0;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__events {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+    &__event {
+        padding: 0px 32px;
+    }
+
+    &__date {
+        margin-top: -2px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 6.63px;
+        }
+
+        @include media-up($sm) {
+            @include font(24px, 29px);
+
+            &-name {
+                margin-top: -8px;
+            }
+
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__name {
+        padding-bottom: 4px;
+    }
+
+    &__btn {
+        padding: 11px 19.5px 10px;
+        @include font(14px, 17px);
+
+        @include media-up($sm) {
+            padding: 16px 24.5px 15px;
+            margin-top: -6px;
+        }
+    }
+}

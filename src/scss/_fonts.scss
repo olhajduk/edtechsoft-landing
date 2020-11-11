@@ -33,3 +33,19 @@
 .fw--700 {
     font-weight: 700;
 }
+
+.fs--14 {
+    @include font(14px, 17px);
+}
+
+.fs--16 {
+    @include font(16px, 19px);
+}
+
+.fs--24 {
+    @include font(24px, 29px);
+}
+
+.fs--36 {
+    @include font(36px, 43px);
+}

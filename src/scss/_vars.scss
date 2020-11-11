@@ -2,12 +2,23 @@
 $color-primary: #fff;
 $color-secondary: #C9C3F3;
 
+$color-bg-left: #8159C6;
+$color-bg-right: #6C7CFF;
+$color-bg: linear-gradient(90deg, $color-bg-left 0%, $color-bg-right 100%);
+
 $color-yellow: #FFDE00;
 $color-orange: #FF885E;
+$color-dark: #000;
 
 // Breakpoints
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1220px;
+
+// Font
+@mixin font($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
 

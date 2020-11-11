@@ -21,7 +21,7 @@ ul {
 body {
     font-family: 'Open Sans', sans-serif;
     background: $color-bg;
-    @include font(14px, 17px);
+    color: $color-primary;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     padding: 0 8px;
     margin: 0 auto;
     width: 100%;
-    max-width: calc(1225px + #{$dp});
+    max-width: calc(1228px + #{$dp});
 
     @include media-up($sm) {
         padding: 0 $dp;

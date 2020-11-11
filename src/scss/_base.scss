@@ -31,13 +31,13 @@ body {
 }
 
 .container {
-    $dp: 30px;
+    $dp: 100px;
     padding: 0 8px;
     margin: 0 auto;
     width: 100%;
-    max-width: calc(1248px + #{$dp});
 
     @include media-up($sm) {
+        max-width: calc(1217px + (#{$dp}*2));
         padding: 0 $dp;
     }
 

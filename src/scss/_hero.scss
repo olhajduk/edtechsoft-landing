@@ -1,19 +1,15 @@
 .hero {
     overflow: hidden;
 
+    &__tringle {
+        bottom: 7px;
+        right: 0px;
+        width: 100vw;
+        overflow: hidden;
+    }
+
     &__container {
         padding-top: 27px;
-
-        &:before {
-            content: '';
-            position: absolute;
-            bottom: -67.5%;
-            right: -31%;
-            width: 150vw;
-            height: 50vh;
-            background: $color-bg-secondary;
-            transform: rotate(175.5deg);
-        }
 
         @include media-up($sm) {
             padding-top: 72px;

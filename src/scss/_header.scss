@@ -22,7 +22,11 @@
     }
 
     &__event {
-        padding: 0px 32px;
+        padding: 0px 33px;
+    }
+
+    &-name {
+        letter-spacing: -0.1px;
     }
 
     &__date {

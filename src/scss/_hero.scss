@@ -2,7 +2,7 @@
     overflow: hidden;
 
     &__tringle {
-        bottom: 7px;
+        bottom: -10px;
         right: 0;
         width: 144vw;
         overflow: hidden;
@@ -26,7 +26,7 @@
 
         @include media-up($md) {
             padding-top: 72px;
-            padding-bottom: 178px;
+            padding-bottom: 168px;
         }
 
         .container__half {
@@ -177,7 +177,7 @@
         z-index: -1;
 
         @include media-up($md) {
-            bottom: 30px;
+            bottom: 20px;
         }
 
         @include media-up($lg) {
@@ -185,7 +185,7 @@
         }
 
         @include media-up($midl) {
-            bottom: 70px;
+            bottom: 60px;
         }
 
         @include media-down($sm - 1) {

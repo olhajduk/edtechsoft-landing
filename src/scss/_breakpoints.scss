@@ -1,12 +1,12 @@
 @mixin media-up($size) {
     @media (min-width: $size) { 
-        @content
+        @content;
      }
 }
 
 @mixin media-down($size) {
     @media (max-width: $size) { 
-        @content
+        @content;
      }
 }
 

@@ -156,10 +156,27 @@
                 &:before {
                     transform: rotate(-45deg);
                 }
-    
+
                 &:after {
                     transform: rotate(45deg);
                 }
+            }
+        }
+
+        &--trapezoid {
+            width: 46.64px;
+            height: 59.31px;
+            display: inline-block;
+
+            &-up {
+                top: -35px;
+                right: 220px;
+                transform: rotate(180deg);
+            }
+
+            &-down {
+                bottom: 58px;
+                left: -168px;
             }
         }
     }

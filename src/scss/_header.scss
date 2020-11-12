@@ -1,0 +1,115 @@
+.header {
+    padding: 6px 0;
+
+    @include media-up($sm) {
+        padding: 19px 0;
+    }
+
+    &__container {
+        margin: 0 -8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media-up($sm) {
+            margin: 0 -3px;
+        }
+
+
+        @include media-down($lg - 1) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__events {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+
+        @include media-up($lg) {
+            margin-top: -2px;
+        }
+
+        @include media-down($lg - 1) {
+            margin-top: 19px;
+            width: 100%;
+            order: 3;
+        }
+    }
+
+    &__event {
+        padding: 0 8px;
+
+        @include media-up($sm) {
+            padding: 0 15px;
+        }
+
+        @include media-up($xl) {
+            padding: 0 33px;
+        }
+
+        @include media-down($md - 1) {
+            margin-bottom: 20px;
+            width: 50%;
+        }
+    }
+
+    &__name {
+        letter-spacing: -0.1px;
+    }
+
+    &__date {
+        margin-top: -2px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        @include font(19px, 120%);
+        letter-spacing: -0.3px;
+
+        svg {
+            width: 44px;
+            margin-right: 7px;
+        }
+
+        @include media-up($sm) {
+            letter-spacing: 0;
+            @include font(24px, 29px);
+
+            &-name {
+                margin-top: -8px;
+            }
+
+            svg {
+                width: 57px;
+                margin-right: 8px;
+            }
+        }
+
+        @include media-down($lg - 1) {
+            order: 1;
+        }
+    }
+
+    &__name {
+        padding-bottom: 4px;
+    }
+
+    &__btn {
+        margin-top: -4px;
+        padding: 11px 19.5px 10px;
+        @include font(14px, 17px);
+
+        @include media-up($sm) {
+            padding: 16px 24.5px 15px;
+            margin-top: -9px;
+        }
+
+        @include media-down($lg - 1) {
+            order: 2;
+        }
+    }
+}

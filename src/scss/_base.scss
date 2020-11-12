@@ -1,0 +1,69 @@
+* {
+    &,
+    &:before,
+    &:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: $color-bg;
+    color: $color-primary;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include media-up($sm) {
+        padding: 0 15px;
+    }
+
+    @include media-up($lgg) {
+        $dp: 100px;
+        max-width: calc(1217px + (#{$dp}*2));
+        padding: 0 $dp;
+    }
+
+    &__half {
+        width: 50%;
+    }
+}
+
+.color {
+    &--muted {
+        color: $color-secondary;
+    }
+
+    &--yellow {
+        color: $color-yellow;
+    }
+}
+
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}

@@ -1,0 +1,35 @@
+// Colors
+$color-primary: #fff;
+$color-secondary: #C9C3F3;
+
+$color-bg-left: #8159C6;
+$color-bg-right: #6C7CFF;
+$color-bg: linear-gradient(90deg, $color-bg-left 0%, $color-bg-right 100%);
+
+$color-bg-secondary-left: #FF9D66;
+$color-bg-secondary-right: #FF7256;
+$color-bg-secondary: linear-gradient(90deg, $color-bg-secondary-left 0%, $color-bg-secondary-right 100%);
+$color-bg-dots: #6B2C88;
+$color-bg-square: #F8D008;
+$color-bg-x: #6845AE;
+
+$color-yellow: #FFDE00;
+$color-orange: #FF885E;
+$color-dark: #000;
+
+// Breakpoints
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$lgg: 1280px;
+$xl: 1366px;
+$midl: 1680px;
+$xll: 1920px;
+
+// Font
+@mixin font($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+

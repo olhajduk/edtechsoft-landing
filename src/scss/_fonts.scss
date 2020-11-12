@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Open Sans';
     src: url('./../fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -17,7 +17,35 @@
 @font-face {
     font-family: 'Open Sans';
     src: url('./../fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+
+.fw--400 {
+    font-weight: 400;
+}
+
+.fw--600 {
+    font-weight: 600;
+}
+
+.fw--700 {
+    font-weight: 700;
+}
+
+.fs--14 {
+    @include font(14px, 17px);
+}
+
+.fs--16 {
+    @include font(16px, 19px);
+}
+
+.fs--24 {
+    @include font(24px, 29px);
+}
+
+.fs--36 {
+    @include font(36px, 43px);
 }

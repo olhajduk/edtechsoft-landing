@@ -31,12 +31,16 @@ body {
 }
 
 .container {
-    $dp: 100px;
-    padding: 0 8px;
+    padding: 0 16px;
     margin: 0 auto;
     width: 100%;
 
     @include media-up($sm) {
+        padding: 0 15px;
+    }
+
+    @include media-up($lgg) {
+        $dp: 100px;
         max-width: calc(1217px + (#{$dp}*2));
         padding: 0 $dp;
     }

@@ -70,7 +70,7 @@
 .bg-item {
     display: none;
 
-    @include media-up($sm) {
+    @include media-up($lg - 1) {
         &--dots {
             top: -30%;
             left: 0;
